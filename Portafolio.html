@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Portafolio | Kevin Jiménez</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Portafolio.css">
+
+</head>
+<body>
+
+<div class="background-blur"></div>
+
+<header class="me">
+  <h1>Portafolio Personal | Kevin Jiménez Molinares</h1>
+  <p style="margin-left: 250px; margin-right: 250px; margin-bottom: 100px;">Estudiante de Ingeniería en Computación con conocimientos basicos en el area del desarrollo web, bases de datos y aseguramiento de la calidad del software, me gusta aprender nuevas tecnologias y aplicarlas en mis proyectos, además del trabajo colaborativo</p>
+
+  <a href="#projects" class="btn-primary">Ver Proyectos</a>
+  <a href="#about" class="btn-primary">Sobre mí</a>
+  <a href="#skills" class="btn-primary">Habilidades</a>
+  <a href="#contact" class="btn-primary">Contacto</a>
+</header>
+
+<section id="about" class="about">
+  <h2>Sobre mí</h2>
+  <p>
+    Actualmente me encuentro cursando mi ultimo semestre de la carrera de Ingeniería en Computación en el Instituto Tecnológico de Costa Rica (TEC), 
+    durante mi carrera he tenido la oportunidad de desarrollar proyectos en diferentes areas, como el desarrollo web, bases de datos, aseguramiento de la calidad del software, desarrollo movil y despliegue de clusters,
+    muchos de estos proyectos han sido desarrollados en equipos de trabajo, lo que me ha permitido desarrollar habilidades de trabajo en equipo, comunicación, liderazgo y una participación activa en el desarrollo de las aplicaciones,
+    he formado parte del equipo de mentores del tec que ayudan a estudiantes de primer ingreso a adaptarse a la vida universitaria y a sus estudios.
+    Me gusta aprender nuevas cosas, me gusta generar espacios profesionales pero que se sientan amigables y colaborativos, me gusta participar en actividades extracurriculares que fomenten la socialización y el trabajo en equipo.
+  </p>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Proyectos Destacados</h2>
+
+  <div class="card">
+    <img src="assets/favicon.png">
+    <div class="card-content">
+      <h3>MiChef</h3>
+      <p>Aplicación móvil que cuenta con accesibilidad para personas con discapacidad visual, la app es un gestor de recetas el cual controla ingredientes,
+        tiempos, cantidades, instrucciones, etc. El app fue desarrolada desde 0 para el curso de diseño de software, con el objetivo de 
+        aplicar los conocimientos adquiridos en el curso. La aplicación es funcional tanto para iOS como para Android.
+      </p>
+      <div class="tags">
+        <p>Tecnologías utilizadas:</p>
+        <span>React Native</span>
+        <span>Microsoft SQL Server</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>Azure for students</span>
+        <span>VoiceOver y TalkBack</span>
+        <p>Tipo de proyecto:</p>
+        <span>En parejas</span>
+      </div>
+      
+      <div class="buttons">
+        <a href="#">GitHub</a>
+        <a href="#">Diseño en Figma</a>
+        <a href="#">Documentación, base de datos y más información</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/proyecto2.png">
+    <div class="card-content">
+      <h3>Sistema Académico TEC</h3>
+      <p>Gestión de solicitudes y administración académica.</p>
+      <div class="tags">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Equipo</span>
+      </div>
+      <div class="buttons">
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="skills" class="skills">
+  <h2>Habilidades</h2>
+
+  <div class="skill">
+    <p>Backend</p>
+    <div class="bar"><div class="progress backend"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Frontend</p>
+    <div class="bar"><div class="progress frontend"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Cloud & DevOps</p>
+    <div class="bar"><div class="progress cloud"></div></div>
+  </div>
+
+</section>
+
+
+  <div id="contact" class="social">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-correo"></i></a>
+  </div>
+  
+<footer>
+  <p style="margin-left: 20px;">© 2026 Kevin Jiménez</p>
+</footer>
+
+
+    <script>
+    
+    document.addEventListener("contextmenu", e => e.preventDefault());
+    ["copy", "cut", "paste"].forEach(event =>
+    document.addEventListener(event, e => e.preventDefault())
+    );
+
+    document.addEventListener("keydown", function(e) {
+
+    if (e.key === "F12") e.preventDefault();
+
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i")
+        e.preventDefault();
+
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j")
+        e.preventDefault();
+
+    if (e.ctrlKey && e.key.toLowerCase() === "u")
+        e.preventDefault();
+
+    if (e.ctrlKey && e.key.toLowerCase() === "s")
+        e.preventDefault();
+
+    if (e.ctrlKey && e.key.toLowerCase() === "c")
+        e.preventDefault();
+    });
+
+    setInterval(function() {
+    if (window.outerWidth - window.innerWidth > 160 ||
+        window.outerHeight - window.innerHeight > 160) {
+        document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:20%'>Acceso restringido</h1>";
+    }
+    }, 1000);
+
+    console.log = function(){};
+    console.warn = function(){};
+    console.error = function(){};
+    console.clear = function(){};
+
+    window.addEventListener("beforeprint", function (e) {
+    document.body.innerHTML = "";
+    });
+    </script>
+</body>
+</html>
