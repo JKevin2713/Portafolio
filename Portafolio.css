@@ -183,9 +183,9 @@ h2{
   animation:load 2s ease forwards;
 }
 
-.backend{ width:85%; background:#38bdf8;}
+.backend{ width:65%; background:#38bdf8;}
 .frontend{ width:75%; background:#a855f7;}
-.cloud{ width:70%; background:#f472b6;}
+.cloud{ width:40%; background:#f472b6;}
 
 @keyframes load{
   from{ width:0; }
